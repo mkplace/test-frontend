@@ -11,6 +11,8 @@ Para realizar este teste, você deverá fazer um fork do repositório.
 
 O protótipo do projeto, bem como os assets, podem ser encontrados neste link: https://www.figma.com/file/neYyxwxoy3mzqjHXJjfif6/Teste-T%C3%A9cnico-Frontend?node-id=51%3A318
 
+Nós concordamos que este teste pode ser resolvido em cerca de 20h, porém o prazo limite estipulado para entrega é de até 30 dias. O mais importante é avaliar se você conseguiu alcançar os objetivos que foram propostos.
+
 ## Desafio
 
 Você deverá desenvolver uma aplicação para criar e visualizar listas de compras, contendo as informações básicas e imagens dos produtos selecionados.
