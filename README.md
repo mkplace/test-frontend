@@ -30,7 +30,7 @@ Você deverá desenvolver uma aplicação para criar e visualizar listas de comp
   - Selecionar uma sub-categoria - traz um select input onde o usuário pode visualizar as sub-categorias existentes e selecionar uma. _Habilitado apenas se a categoria estiver selecionada_.
   - Nome do produto - input com _autocomplete_. O usuário deve digitar o nome do produto e o input deverá trazer sugestões para o que está sendo escrito.
   - Preço - traz um input onde o usuário deve poder inserir valor do produto.
-  - Tipo - traz um select input onde o usuário pode visualizar as unidades de medida do produto e selecionar uma.
+  - Tipo - traz um select input onde o usuário pode visualizar as unidades de medida - unidade, Kg - do produto e selecionar uma.
   - Quantidade - traz um input onde o usuário deve poder inserir a quantidade de itens que quer adicionar.
   - Campo para upload de imagens - traz um input de _file upload_, onde o usuário poderá inserir uma imagem do produto. _A imagem deverá ter no máximo 1MB_.
   - Botão de submit - o usuário poderá adicionar o item criado.
