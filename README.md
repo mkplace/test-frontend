@@ -1,34 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Teste técnico para Frontend Developer MKPlace
 
-## Getting Started
+Neste repositório você encontra o teste técnico utilizado para as nossas vagas de Desenvolvedor(a) Frontend.
 
-First, run the development server:
+Esta avaliação é aplicada para as vagas em todos os níveis - júnior a sênior - mudando os critérios de análise.
+Se você for júnior e não conseguir completar o teste, não tem problema. Gostaríamos de avaliar até onde você conseguiu chegar e a lógica que aplicou.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Instruções
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para realizar este teste, você deverá fazer um fork do repositório.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+O protótipo do projeto, bem como os assets, podem ser encontrados neste link: https://www.figma.com/file/neYyxwxoy3mzqjHXJjfif6/Teste-T%C3%A9cnico-Frontend?node-id=51%3A318
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+A documentação da API pode ser encontrada neste link: [Api Documentation](api-documentation.md)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Nós concordamos que este teste pode ser resolvido em cerca de 20h, porém o prazo limite estipulado para entrega é de até 30 dias. O mais importante é avaliar se você conseguiu alcançar os objetivos que foram propostos.
 
-## Learn More
+## Desafio
 
-To learn more about Next.js, take a look at the following resources:
+Você deverá desenvolver uma aplicação para criar e visualizar listas de compras, contendo as informações básicas e imagens dos produtos selecionados.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Descrição geral
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Ao abrir a tela, o usuário deverá encontrar um botão para adicionar uma lista de compras.
+  Caso já exista alguma lista criada, a mesma deverá aparecer na tela, constando informações de título, quantidade de categorias e quantidade de itens.
 
-## Deploy on Vercel
+  <center><img src="public/img/tela_inicial.png" alt="tela inicial"/></center>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Ao clicar em _criar uma lista de compras_, o usuário deverá encontrar um formulário de cadastro, contendo os campos:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  - Selecionar uma categoria - traz um select input onde o usuário pode visualizar as categorias existentes e selecionar uma.
+  - Selecionar uma sub-categoria - traz um select input onde o usuário pode visualizar as sub-categorias existentes e selecionar uma. _Habilitado apenas se a categoria estiver selecionada_.
+  - Nome do produto - input com _autocomplete_. O usuário deve digitar o nome do produto e o input deverá trazer sugestões para o que está sendo escrito.
+  - Preço - traz um input onde o usuário deve poder inserir valor do produto.
+  - Tipo - traz um select input onde o usuário pode visualizar as unidades de medida - unidade, Kg - do produto e selecionar uma.
+  - Quantidade - traz um input onde o usuário deve poder inserir a quantidade de itens que quer adicionar.
+  - Campo para upload de imagens - traz um input de _file upload_, onde o usuário poderá inserir uma imagem do produto. _A imagem deverá ter no máximo 1MB_.
+  - Botão de submit - o usuário poderá adicionar o item criado.
+
+  _Observação: no mobile, se o usuário estiver na página de criação da lista e clicar em voltar sem ter selecionado a opção de **concluir lista**, um modal deverá ser aberto para que o mesmo confirme a ação._
+
+  <center><img src="public/img/mobile_modal.png" alt="Modal mobile"/></center>
+
+  Assim que o item for cadastrado, este deverá ser listado ao lado esquerdo do formulário - abaixo do card descritivo com título, quantidade de categorias e quantidade de itens existentes - apresentando os detalhes de imagem (se existir), nome, preço e tipo de unidade de medida para o mesmo, bem como o botão de _delete_ alinhado ao lado direito do card.
+
+  ![formulário de criação](public/img/criando_lista.png)
+
+- Ao clicar em _concluir lista_, o usuário deverá visualizar uma tela contendo:
+  - Lista dos itens criados, separados de acordo com a categoria.
+  - Cada item deverá conter um input do tipo _checkbox_, onde o usuário poderá marcar o item que já adquiriu.
+  - Cada item deverá conter um seletor de quantidade, onde o usuário poderá escolher quantos itens gostaria de levar.
+  - Cada item deverá conter o valor total para aquele item, de acordo com a quantidade selecionada pelo usuário.
+  - Valor total do carrinho, que deverá ser atualizado a cada mudança nas quantidades dos itens na lista.
+
+## Requisitos técnicos para o teste
+
+- O projeto utiliza o React Js como biblioteca para construção das interfaces e Next Js como framework.
+- Para o gerenciamento de estados globais você deverá utilizar Context API.
+- O uso de Typescript é obrigatório.
+- Deixamos a definição e metodologia do CSS a ser utilizada a seu critério, mas por aqui utilizamos o Tailwind como framework.
+
+## Critérios de avaliação
+
+- Arquitetura utilizada.
+- Organização do código - legibilidade, usabilidade e manutenibilidade.
+- Componentização de código.
+- Clean code.
+- Histórico de commits.
+- Layout responsivo - de acordo com o mockup para mobile.
+- Alcance dos objetivos que foram propostos.
+
+## O que seria um diferencial
+
+- Utilização de teste.
+- Small commits.
+- Ver seu código hospedado na Vercel.
+
+## Submissão do teste
+
+O link do seu repositório deverá ser enviado ao seguinte e-mail:
+
+- amanda.tavares@mkplace.com.br
