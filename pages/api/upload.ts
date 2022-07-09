@@ -14,7 +14,7 @@ export const config = {
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data | { error: string }>
+  res: NextApiResponse<Data | { message: string }>
 ) {
   try {
     if (req.method === "POST") {
@@ -60,6 +60,6 @@ export default async function handler(
       throw new Error("Método inválido");
     }
   } catch (error: any) {
-    res.status(400).json({ error: error?.message || error });
+    res.status(400).json({ message: error?.message || error });
   }
 }

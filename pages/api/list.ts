@@ -66,9 +66,10 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         const data: Data[] | undefined = myCache.get("list");
 
         if (req.query.id) {
-          res
-            .status(200)
-            .json(data?.find((list) => list.id === Number(req.query.id)));
+          const finded = data?.find((list) => list.id === Number(req.query.id));
+          if (!finded?.id)
+            throw new Error("Não encontramos a lista que você solicitou");
+          res.status(200).json(finded);
         }
 
         res.status(200).json(data);
@@ -142,6 +143,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         throw new Error("Método inválido");
     }
   } catch (error: any) {
-    res.status(400).json({ error: error?.message || error });
+    res.status(400).json({ message: error?.message || error });
   }
 }
