@@ -2,10 +2,6 @@
 
 ## [GET] /api/list
 
-#### Query params:
-
-- id: number (optional)
-
 #### [200] Response body:
 
 ```

@@ -65,13 +65,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
         const data: Data[] | undefined = myCache.get("list");
 
-        if (req.query.id) {
-          const finded = data?.find((list) => list.id === Number(req.query.id));
-          if (!finded?.id)
-            throw new Error("Não encontramos a lista que você solicitou");
-          res.status(200).json(finded);
-        }
-
         res.status(200).json(data);
         break;
       case "POST":
