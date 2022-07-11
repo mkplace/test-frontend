@@ -13,7 +13,7 @@ O protótipo do projeto, bem como os assets, podem ser encontrados neste link: h
 
 A documentação da API pode ser encontrada neste link: [Api Documentation](api-documentation.md)
 
-Nós concordamos que este teste pode ser resolvido em cerca de 20h, porém o prazo limite estipulado para entrega é de até 15 dias. O mais importante é avaliar se você conseguiu alcançar os objetivos que foram propostos.
+Nós concordamos que este teste pode ser resolvido em cerca de 20h, porém o prazo limite estipulado para entrega é de até 10 dias. O mais importante é avaliar se você conseguiu alcançar os objetivos que foram propostos.
 
 ## Desafio
 
@@ -45,7 +45,7 @@ Você deverá desenvolver uma aplicação para criar e visualizar listas de comp
 
   ![formulário de criação](public/img/criando_lista.png)
 
-- Ao clicar em **concluir lista**, o usuário deverá visualizar uma tela contendo:
+- Ao clicar em **concluir lista**, o usuário deverá voltar para a página inicial, onde irá observar as listas criadas. Ao entrar em uma lista, deverá visualizar:
   - Lista dos itens criados, separados de acordo com a categoria.
   - Cada item deverá conter um input do tipo _checkbox_, onde o usuário poderá marcar o item que já adquiriu.
   - Cada item deverá conter um seletor de quantidade, onde o usuário poderá visualizar a quantidade criada e altera-lá, se assim preferir.
@@ -64,12 +64,12 @@ Você deverá desenvolver uma aplicação para criar e visualizar listas de comp
   - Select input de sub-categorias: utilizar a rota [**[GET] /api/subcategory**](api-documentation.md#subcategory), para trazer as opções de sub-categorias existentes.
   - Input com opção autocomplete: utilizar a rota <a href="api-documentation.md#products">**[GET] /api/products**</a>, para trazer opções de nomes de produtos para o usuário inserir no campo.
   - Campo para upload: utilizar a rota [**[POST] /api/upload**](api-documentation.md#upload), para fazer o envio de imagens.
-  - Botão de concluir lista: utilizar a rota [**[POST] /api/list**](api-documentation.md#post_list), para fazer o envio das informações e criar o item.
+  - Botão de concluir lista: fazer o upload das imagens de cada produto, usando o endpoint do upload e atrelar a URL de resposta ao objeto do produto, em sequência utilizar a rota [**[POST] /api/list**](api-documentation.md#post_list) para fazer o envio das informações e criar a lista.
 
   _Observação: assim que o primeiro item estiver criado, este deverá ser listado na tela, como já citado na seção [**Descrição geral**](#citacao_item_criado), utilizando a rota [**[GET] /api/list**](api-documentation.md#get_list) para trazer as informações._
 
 - Página de lista de compras:
-  - Utilizar a rota de [**[GET] /api/list**](api-documentation.md#get_list) para trazer todas as informações necessárias.
+  - Verificar se existe alguma lista salva no estado global e, caso não exista, utilizar a rota de [**[GET] /api/list**](api-documentation.md#get_list) para trazer todas as listas, filtrando-as pelo id informado na URL.
 
 ## Requisitos técnicos para o teste
 
@@ -90,6 +90,7 @@ Você deverá desenvolver uma aplicação para criar e visualizar listas de comp
 
 ## O que seria um diferencial
 
+- Renderizar a página de detalhamento da lista de compras com SSR, visando o SEO.
 - Utilização de teste.
 - Small commits.
 - Ver seu código hospedado na Vercel.
@@ -99,3 +100,5 @@ Você deverá desenvolver uma aplicação para criar e visualizar listas de comp
 O link do seu repositório deverá ser enviado ao seguinte e-mail:
 
 - amanda.tavares@mkplace.com.br
+
+Em caso de dúvidas, entrar em contato com Amanda Tavares.
