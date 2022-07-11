@@ -48,7 +48,7 @@ Você deverá desenvolver uma aplicação para criar e visualizar listas de comp
 - Ao clicar em _concluir lista_, o usuário deverá visualizar uma tela contendo:
   - Lista dos itens criados, separados de acordo com a categoria.
   - Cada item deverá conter um input do tipo _checkbox_, onde o usuário poderá marcar o item que já adquiriu.
-  - Cada item deverá conter um seletor de quantidade, onde o usuário poderá escolher quantos itens gostaria de levar.
+  - Cada item deverá conter um seletor de quantidade, onde o usuário poderá visualizar a quantidade criada e altera-lá, se assim preferir.
   - Cada item deverá conter o valor total para aquele item, de acordo com a quantidade selecionada pelo usuário.
   - Valor total do carrinho, que deverá ser atualizado a cada mudança nas quantidades dos itens na lista.
 
