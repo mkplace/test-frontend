@@ -32,7 +32,7 @@ Você deverá desenvolver uma aplicação para criar e visualizar listas de comp
   - Selecionar uma sub-categoria - traz um select input onde o usuário pode visualizar as sub-categorias existentes e selecionar uma. _Habilitado apenas se a categoria estiver selecionada_.
   - Nome do produto - input com _autocomplete_. O usuário deve digitar o nome do produto e o input deverá trazer sugestões para o que está sendo escrito.
   - Preço - traz um input onde o usuário deve poder inserir valor do produto.
-  - Tipo - traz um select input onde o usuário pode visualizar as unidades de medida - unidade, Kg - do produto e selecionar uma.
+  - Tipo - traz um select input onde o usuário pode visualizar as unidades de medida ( unidade ou Kg ) do produto e selecionar uma.
   - Quantidade - traz um input onde o usuário deve poder inserir a quantidade de itens que quer adicionar.
   - Campo para upload de imagens - traz um input de _file upload_, onde o usuário poderá inserir uma imagem do produto. _A imagem deverá ter no máximo 1MB_.
   - Botão de submit - o usuário poderá adicionar o item criado.
@@ -41,7 +41,7 @@ Você deverá desenvolver uma aplicação para criar e visualizar listas de comp
 
   <center><img src="public/img/mobile_modal.png" alt="Modal mobile"/></center>
 
-  <a id="citacao_item_criado"> Assim que o item for cadastrado, este deverá ser listado ao lado esquerdo do formulário - abaixo do card descritivo com título, quantidade de categorias e quantidade de itens existentes - apresentando os detalhes de imagem (se existir), nome, preço e tipo de unidade de medida para o mesmo, bem como o botão de _delete_ alinhado ao lado direito do card. </a>
+  <a id="citacao_item_criado"> Assim que o item for adicionado, este deverá ser listado ao lado esquerdo do formulário - abaixo do card descritivo com título, quantidade de categorias e quantidade de itens existentes - apresentando os detalhes de imagem (se existir), nome, preço e tipo de unidade de medida para o mesmo, bem como o botão de _delete_ alinhado ao lado direito do card. </a>
 
   ![formulário de criação](public/img/criando_lista.png)
 
@@ -64,7 +64,7 @@ Você deverá desenvolver uma aplicação para criar e visualizar listas de comp
   - Select input de sub-categorias: utilizar a rota [**[GET] /api/subcategory**](api-documentation.md#subcategory), para trazer as opções de sub-categorias existentes.
   - Input com opção autocomplete: utilizar a rota <a href="api-documentation.md#products">**[GET] /api/products**</a>, para trazer opções de nomes de produtos para o usuário inserir no campo.
   - Campo para upload: utilizar a rota [**[POST] /api/upload**](api-documentation.md#upload), para fazer o envio de imagens.
-  - Botão de submissão/adicionar item: utilizar a rota [**[POST] /api/list**](api-documentation.md#post_list), para fazer o envio das informações e criar o item.
+  - Botão de concluir lista: utilizar a rota [**[POST] /api/list**](api-documentation.md#post_list), para fazer o envio das informações e criar o item.
 
   _Observação: assim que o primeiro item estiver criado, este deverá ser listado na tela, como já citado na seção [**Descrição geral**](#citacao_item_criado), utilizando a rota [**[GET] /api/list**](api-documentation.md#get_list) para trazer as informações._
 
