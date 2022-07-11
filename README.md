@@ -13,7 +13,7 @@ O protótipo do projeto, bem como os assets, podem ser encontrados neste link: h
 
 A documentação da API pode ser encontrada neste link: [Api Documentation](api-documentation.md)
 
-Nós concordamos que este teste pode ser resolvido em cerca de 20h, porém o prazo limite estipulado para entrega é de até 30 dias. O mais importante é avaliar se você conseguiu alcançar os objetivos que foram propostos.
+Nós concordamos que este teste pode ser resolvido em cerca de 20h, porém o prazo limite estipulado para entrega é de até 15 dias. O mais importante é avaliar se você conseguiu alcançar os objetivos que foram propostos.
 
 ## Desafio
 
