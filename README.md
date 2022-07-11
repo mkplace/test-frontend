@@ -56,20 +56,20 @@ Você deverá desenvolver uma aplicação para criar e visualizar listas de comp
 
 - Página inicial:
 
-  - Deverá trazer a relação de todas as listas de compras já criadas pelo usuário, utilizando a rota [**[GET] /api/list**](api-documentation.md#get-list).
+  - Deverá trazer a relação de todas as listas de compras já criadas pelo usuário, utilizando a rota [**[GET] /api/list**](api-documentation.md#get_list).
 
 - Página do formulário de criação do item:
 
   - Select input de categorias: utilizar a rota [**[GET] /api/category**](api-documentation.md#category), para trazer as opções de categoria existentes.
   - Select input de sub-categorias: utilizar a rota [**[GET] /api/subcategory**](api-documentation.md#subcategory), para trazer as opções de sub-categorias existentes.
-  - Input com opção autocomplete: utilizar a rota [**[GET] /api/products**](api-documentation.md#products), para trazer opções de nomes de produtos para o usuário inserir no campo.
+  - Input com opção autocomplete: utilizar a rota <a href="api-documentation.md#products">**[GET] /api/products**</a>, para trazer opções de nomes de produtos para o usuário inserir no campo.
   - Campo para upload: utilizar a rota [**[POST] /api/upload**](api-documentation.md#upload), para fazer o envio de imagens.
-  - Botão de submissão/adicionar item: utilizar a rota [**[POST] /api/list**](api-documentation.md#post-list), para fazer o envio das informações e criar o item.
+  - Botão de submissão/adicionar item: utilizar a rota [**[POST] /api/list**](api-documentation.md#post_list), para fazer o envio das informações e criar o item.
 
-  _Observação: assim que o primeiro item estiver criado, este deverá ser listado na tela, como já citado na seção [**Descrição geral**](#citacao_item_criado), utilizando a rota [**[GET] /api/list**](api-documentation.md#get-list) para trazer as informações._
+  _Observação: assim que o primeiro item estiver criado, este deverá ser listado na tela, como já citado na seção [**Descrição geral**](#citacao_item_criado), utilizando a rota [**[GET] /api/list**](api-documentation.md#get_list) para trazer as informações._
 
 - Página de lista de compras:
-  - Utilizar a rota de [**[GET] /api/list**](api-documentation.md#get-list) para trazer todas as informações necessárias.
+  - Utilizar a rota de [**[GET] /api/list**](api-documentation.md#get_list) para trazer todas as informações necessárias.
 
 ## Requisitos técnicos para o teste
 
