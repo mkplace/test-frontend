@@ -1,6 +1,6 @@
 # API Documentation
 
-## [GET] /api/list
+## <a id="get-list"> [GET] /api/list </a>
 
 #### [200] Response body:
 
@@ -83,7 +83,7 @@
 }
 ```
 
-## [POST] /api/list
+## <a id="post-list"> [POST] /api/list </a>
 
 #### Request body:
 
@@ -148,7 +148,7 @@
 }
 ```
 
-## [GET] /api/category
+## <a id="category"> [GET] /api/category </a>
 
 #### [200] Response body:
 
@@ -171,7 +171,7 @@
 {}
 ```
 
-## [GET] /api/subcategory
+## <a id="subcategory"> [GET] /api/subcategory </a>
 
 #### Query params:
 
@@ -205,7 +205,7 @@
 {}
 ```
 
-## [GET] /api/products
+## <a id="products"> [GET] /api/products </a>
 
 #### Query params:
 
@@ -236,7 +236,7 @@
 {}
 ```
 
-## [POST] /api/upload
+## <a id="upload"> [POST] /api/upload </a>
 
 #### Request body:
 

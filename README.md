@@ -7,7 +7,7 @@ Se você for júnior e não conseguir completar o teste, não tem problema. Gost
 
 ## Instruções
 
-Para realizar este teste, você deverá fazer um fork do repositório.
+Para realizar este teste, você deverá clicar em **use this template**, criar seu repositório com o nome **teste-tecnico-mkplace** e começar a desenvolver.
 
 O protótipo do projeto, bem como os assets, podem ser encontrados neste link: https://www.figma.com/file/neYyxwxoy3mzqjHXJjfif6/Teste-T%C3%A9cnico-Frontend?node-id=51%3A318
 
@@ -26,7 +26,7 @@ Você deverá desenvolver uma aplicação para criar e visualizar listas de comp
 
   <center><img src="public/img/tela_inicial.png" alt="tela inicial"/></center>
 
-- Ao clicar em _criar uma lista de compras_, o usuário deverá encontrar um formulário de cadastro, contendo os campos:
+- Ao clicar em **criar uma lista de compras**, o usuário deverá encontrar um formulário de cadastro, contendo os campos:
 
   - Selecionar uma categoria - traz um select input onde o usuário pode visualizar as categorias existentes e selecionar uma.
   - Selecionar uma sub-categoria - traz um select input onde o usuário pode visualizar as sub-categorias existentes e selecionar uma. _Habilitado apenas se a categoria estiver selecionada_.
@@ -41,16 +41,35 @@ Você deverá desenvolver uma aplicação para criar e visualizar listas de comp
 
   <center><img src="public/img/mobile_modal.png" alt="Modal mobile"/></center>
 
-  Assim que o item for cadastrado, este deverá ser listado ao lado esquerdo do formulário - abaixo do card descritivo com título, quantidade de categorias e quantidade de itens existentes - apresentando os detalhes de imagem (se existir), nome, preço e tipo de unidade de medida para o mesmo, bem como o botão de _delete_ alinhado ao lado direito do card.
+  <a id="citacao_item_criado"> Assim que o item for cadastrado, este deverá ser listado ao lado esquerdo do formulário - abaixo do card descritivo com título, quantidade de categorias e quantidade de itens existentes - apresentando os detalhes de imagem (se existir), nome, preço e tipo de unidade de medida para o mesmo, bem como o botão de _delete_ alinhado ao lado direito do card. </a>
 
   ![formulário de criação](public/img/criando_lista.png)
 
-- Ao clicar em _concluir lista_, o usuário deverá visualizar uma tela contendo:
+- Ao clicar em **concluir lista**, o usuário deverá visualizar uma tela contendo:
   - Lista dos itens criados, separados de acordo com a categoria.
   - Cada item deverá conter um input do tipo _checkbox_, onde o usuário poderá marcar o item que já adquiriu.
   - Cada item deverá conter um seletor de quantidade, onde o usuário poderá visualizar a quantidade criada e altera-lá, se assim preferir.
   - Cada item deverá conter o valor total para aquele item, de acordo com a quantidade selecionada pelo usuário.
   - Valor total do carrinho, que deverá ser atualizado a cada mudança nas quantidades dos itens na lista.
+
+### Requisições API a serem realizadas em cada etapa
+
+- Página inicial:
+
+  - Deverá trazer a relação de todas as listas de compras já criadas pelo usuário, utilizando a rota [**[GET] /api/list**](api-documentation.md#get-list).
+
+- Página do formulário de criação do item:
+
+  - Select input de categorias: utilizar a rota [**[GET] /api/category**](api-documentation.md#category), para trazer as opções de categoria existentes.
+  - Select input de sub-categorias: utilizar a rota [**[GET] /api/subcategory**](api-documentation.md#subcategory), para trazer as opções de sub-categorias existentes.
+  - Input com opção autocomplete: utilizar a rota [**[GET] /api/products**](api-documentation.md#products), para trazer opções de nomes de produtos para o usuário inserir no campo.
+  - Campo para upload: utilizar a rota [**[POST] /api/upload**](api-documentation.md#upload), para fazer o envio de imagens.
+  - Botão de submissão/adicionar item: utilizar a rota [**[POST] /api/list**](api-documentation.md#post-list), para fazer o envio das informações e criar o item.
+
+  _Observação: assim que o primeiro item estiver criado, este deverá ser listado na tela, como já citado na seção [**Descrição geral**](#citacao_item_criado), utilizando a rota [**[GET] /api/list**](api-documentation.md#get-list) para trazer as informações._
+
+- Página de lista de compras:
+  - Utilizar a rota de [**[GET] /api/list**](api-documentation.md#get-list) para trazer todas as informações necessárias.
 
 ## Requisitos técnicos para o teste
 
