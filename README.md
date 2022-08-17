@@ -3,7 +3,7 @@
 Neste repositório você encontra o teste técnico utilizado para as nossas vagas de Desenvolvedor(a) Frontend.
 
 Esta avaliação é aplicada para as vagas em todos os níveis - júnior a sênior - mudando os critérios de análise.
-Se você for júnior e não conseguir completar o teste, não tem problema. Gostaríamos de avaliar até onde você conseguiu chegar e a lógica que aplicou.
+Se você for júnior e não conseguir completar o teste, não tem problema. Gostaríamos de avaliar até onde você conseguiu chegar e a lógica que aplicou, porém é necessário ter criado pelo menos as páginas estáticas para mobile e desktop.
 
 ## Instruções
 
@@ -12,6 +12,9 @@ Para realizar este teste, você deverá clicar em **use this template**, criar s
 O protótipo do projeto, bem como os assets, podem ser encontrados neste link: https://www.figma.com/file/neYyxwxoy3mzqjHXJjfif6/Teste-T%C3%A9cnico-Frontend?node-id=51%3A318
 
 A documentação da API pode ser encontrada neste link: [Api Documentation](api-documentation.md)
+
+Para rodar a aplicação no NextJs, você deverá realizar a instalação dos pacotes com o comando "yarn" ou "npm install" - de acordo com sua preferência - e em seguida iniciá-la com "yarn dev" ou "npm run dev".
+Alguns scripts de comando podem ser encontrados no arquivo _package.json_.
 
 Nós concordamos que este teste pode ser resolvido em cerca de 20h, porém o prazo limite estipulado para entrega é de até 10 dias. O mais importante é avaliar se você conseguiu alcançar os objetivos que foram propostos.
 
